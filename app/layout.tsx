@@ -1,5 +1,5 @@
 import "@/src/ui/css/globals.tailwind.css";
-import { oswald, poppins, shadowsIntoLight } from "@/src/ui/fonts";
+import { inter, oswald, poppins, shadowsIntoLight } from "@/src/ui/fonts";
 
 export default function RootLayout({
   children,
@@ -9,7 +9,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${shadowsIntoLight.variable} ${oswald.variable} antialiased`}
+        className={`${poppins.variable} ${inter.variable} ${shadowsIntoLight.variable} ${oswald.variable} antialiased`}
       >
         {children}
       </body>
