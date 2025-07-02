@@ -1,7 +1,14 @@
-import { drizzle } from "drizzle-orm/neon-http";
+import { drizzle } from "drizzle-orm/neon-serverless";
+import { Pool } from "@neondatabase/serverless";
 
 if (!process.env.DATABASE_URL) {
-  throw new Error("DATABASE_URL IS NOT EXIST");
+  throw new Error("DATABASE_URL doesn't exist");
 }
 
-export const db = drizzle(process.env.DATABASE_URL);
+const schema = {
+  schema: {},
+};
+
+export const pool = new Pool({ connectionString: process.env.DATABASE_URL });
+
+export const db = drizzle(pool, schema);
