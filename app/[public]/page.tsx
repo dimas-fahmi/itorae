@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 };
 
 const LandingPage = () => {
-  return <div>ITORAE</div>;
+  return <div className="p-4 text-2xl font-poppins">ITORAE</div>;
 };
 
 export default LandingPage;
