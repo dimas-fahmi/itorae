@@ -1,12 +1,13 @@
 import { Metadata } from "next";
 import React from "react";
+import LandingPageIndex from "./LandingPageIndex";
 
 export const metadata: Metadata = {
   title: "Japanese & Italian Cuisine | ITORAE",
 };
 
 const LandingPage = () => {
-  return <div className="p-4 text-2xl font-poppins">ITORAE</div>;
+  return <LandingPageIndex />;
 };
 
 export default LandingPage;
