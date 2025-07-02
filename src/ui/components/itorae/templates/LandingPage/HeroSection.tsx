@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const HeroSection = () => {
@@ -8,7 +9,8 @@ const HeroSection = () => {
     >
       {/* Backdrop */}
       <div>
-        <img
+        <Image
+          fill
           src={
             "https://zvgpixcwdvbogm3e.public.blob.vercel-storage.com/itorae/art/img/photo_by_alleksana_lasagna.jpg"
           }
@@ -23,10 +25,10 @@ const HeroSection = () => {
         <div className="max-w-lg flex h-full items-center px-4 md:px-6 lg:px-12">
           <div className="text-white">
             <span className="text-xl font-cursive text-yellow-300">
-              When Japanese meet Italian, you'll get...
+              When Japanese meet Italian, you&apos;ll get...
             </span>
             <h1 className="text-6xl font-header mb-6">
-              Most delicous foods you'll ever taste!
+              Most delicous foods you&apos;ll ever taste!
             </h1>
             <div className="flex gap-3">
               <button className="px-4 py-2 border border-yellow-300 bg-yellow-300 text-slate-900 rounded-md font-semibold font-subtitle shadow-2xl cursor-pointer">
