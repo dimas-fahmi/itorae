@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative h-dvh !max-h-[480px] overflow-hidden"
+      className="relative h-dvh max-h-[480px]  lg:max-h-[720px] overflow-hidden"
     >
       {/* Backdrop */}
       <div>
@@ -13,7 +13,7 @@ const HeroSection = () => {
             "https://zvgpixcwdvbogm3e.public.blob.vercel-storage.com/itorae/art/img/photo_by_alleksana_lasagna.jpg"
           }
           alt="Some alt"
-          className="w-full h-dvh !max-h-[480px] object-cover brightness-50"
+          className="w-full h-dvh max-h-[480px]  lg:max-h-[720px] object-cover brightness-50"
         />
       </div>
 
